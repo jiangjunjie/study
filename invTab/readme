@@ -1,0 +1,9 @@
+实验倒排索引，并用bm25计算相关性进行rank
+bm25计算公式
+
+bm25 = sum_w(idf * df * (k1 + 1) / (df + k1 * (1 - b + b * docLen / aveDocLen)))
+累计query中每个单词w
+idf(w) = log((N - n(w) + 0.5) / (n(w) + 0.5))
+docLen为当前doc长度
+aveDocLen为所有doc平均长度
+

@@ -1,1 +1,4 @@
 AC自动机练习
+python: unicode版本，单字较好匹配，速度慢
+c++: 非unicode，单字可能出错，在外层转换宽字符可修正，速度较快
+Index.py: 用倒排思想实现类似AC自动机功能，unicode版本，修改可支持非unicode版本全角，单字较好匹配，缺点是pattern串不能过多
